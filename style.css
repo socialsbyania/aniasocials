@@ -168,7 +168,6 @@ section{scroll-margin-top:90px;position:relative}
 .more-note:after{background:linear-gradient(270deg,transparent,rgba(20,20,20,.2))}
 @media(max-width:520px){.more-note{gap:10px;font-size:.92rem}.more-note:before,.more-note:after{flex-basis:20px}}
 /* ===== PORTFOLIO BUTTONS ===== */
-#work{background:#fff}
 .pf-list{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;max-width:820px;margin:0 auto}
 .pf-btn{display:inline-flex;align-items:center;justify-content:center;min-width:220px;padding:15px 32px;border-radius:999px;background:#fff;color:#141414;border:1.5px solid #141414;box-shadow:0 6px 16px rgba(20,20,20,.12);font:500 .95rem 'Poppins',sans-serif;text-align:center;cursor:pointer;transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s var(--ease),color .3s var(--ease)}
 .pf-btn:hover{transform:translateY(-3px);background:#141414;color:#fff;box-shadow:0 12px 26px rgba(20,20,20,.2)}
