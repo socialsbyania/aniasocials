@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Social Media Creatives</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .sm-back {
+      display: inline-block;
+      margin: 24px;
+      text-decoration: none;
+    }
+    .sm-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 24px 80px;
+    }
+    .sm-title {
+      text-align: center;
+      margin: 0 0 12px;
+    }
+    .sm-subtitle {
+      text-align: center;
+      margin: 0 0 48px;
+      opacity: 0.7;
+    }
+    .sm-gallery {
+      column-width: 320px;
+      column-gap: 24px;
+    }
+    .sm-item {
+      break-inside: avoid;
+      margin: 0 0 24px;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .sm-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+    .sm-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    @media (max-width: 600px) {
+      .sm-section { padding: 10px 16px 60px; }
+      .sm-gallery { column-width: 100%; }
+    }
+  </style>
+</head>
+<body>
 
+  <a href="index.html" class="sm-back">← Back</a>
+
+  <section class="sm-section">
+    <h1 class="sm-title">Social Media Posts</h1>
+    <p class="sm-subtitle">A selection of my social media designs</p>
+
+    <div class="sm-gallery">
+      <div class="sm-item"><img src="images/social/1.png" alt="Social media design 1"></div>
+      <div class="sm-item"><img src="images/social/2.png" alt="Social media design 2"></div>
+      <div class="sm-item"><img src="images/social/3.png" alt="Social media design 3"></div>
+      <div class="sm-item"><img src="images/social/5.png" alt="Social media design 5"></div>
+      <div class="sm-item"><img src="images/social/6.png" alt="Social media design 6"></div>
+    </div>
+  </section>
+
+</body>
+</html>
