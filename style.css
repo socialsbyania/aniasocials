@@ -172,4 +172,3 @@ section{scroll-margin-top:90px;position:relative}
 .pf-btn{display:inline-flex;align-items:center;justify-content:center;min-width:220px;padding:15px 32px;border-radius:999px;background:#fff;color:#141414;border:1.5px solid #141414;box-shadow:0 6px 16px rgba(20,20,20,.12);font:500 .95rem 'Poppins',sans-serif;text-align:center;cursor:pointer;transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s var(--ease),color .3s var(--ease)}
 .pf-btn:hover{transform:translateY(-3px);background:#141414;color:#fff;box-shadow:0 12px 26px rgba(20,20,20,.2)}
 #work{background:transparent!important}
-.pgal.uniform img{aspect-ratio:4/5;object-fit:contain;background:#fff}
