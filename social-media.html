@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Social Media Creatives</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="project-page">
+
+  <!-- Same animated background as your other pages -->
+  <div class="bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+
+  <!-- Page heading -->
+  <header class="ph">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back</a>
+      <span class="eyebrow left">Creative Projects</span>
+      <h1 class="ptitle">Social Media Creatives</h1>
+    </div>
+  </header>
+
+  <!-- Gallery -->
+  <section class="sec" style="padding-top:20px;">
+    <div class="container">
+      <h2>Social Media Posts</h2>
+
+      <div class="pgal">
+        <figure><img src="images/social/1.png" alt="Social media design 1"></figure>
+        <figure><img src="images/social/2.png" alt="Social media design 2"></figure>
+        <figure><img src="images/social/3.png" alt="Social media design 3"></figure>
+        <figure><img src="images/social/5.png" alt="Social media design 5"></figure>
+        <figure><img src="images/social/6.png" alt="Social media design 6"></figure>
+      </div>
+
+     <div class="pnext" style="justify-content:center"><a class="btn btn-primary" href="haute-styles-week.html">Haute Styles Week &#8594;</a></div>
+     <div style="margin-top:50px"><p>Like what you see?</p><a class="btn btn-glass" href="index.html#contact">Let's Connect <span class="arrow">&#8594;</span></a></div>
+    </div>
+  </section>
+
+  <!-- Click-to-enlarge viewer (uses your existing .lightbox style) -->
+  <div class="lightbox" id="lightbox"><img alt="Enlarged design"></div>
+
+  <script>
+    var lb = document.getElementById('lightbox');
+    var lbImg = lb.querySelector('img');
+    document.querySelectorAll('.pgal img').forEach(function (img) {
+      img.addEventListener('click', function () {
+        lbImg.src = img.src;
+        lb.classList.add('show');
+      });
+    });
+    lb.addEventListener('click', function () { lb.classList.remove('show'); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') lb.classList.remove('show');
+    });
+  </script>
+
+</body>
+</html>
