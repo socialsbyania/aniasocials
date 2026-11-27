@@ -173,3 +173,6 @@ section{scroll-margin-top:90px;position:relative}
 .pf-btn:hover{transform:translateY(-3px);background:#141414;color:#fff;box-shadow:0 12px 26px rgba(20,20,20,.2)}
 #work{background:transparent!important}
 .pgal.uniform img{aspect-ratio:4/5;object-fit:contain;background:#fff}
+@media(max-width:600px){
+  .pgal.two-col{grid-template-columns:repeat(3,1fr);gap:6px}
+}
