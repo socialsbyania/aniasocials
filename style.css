@@ -176,3 +176,6 @@ section{scroll-margin-top:90px;position:relative}
 @media(max-width:600px){
   .pgal.uniform.two-col{grid-template-columns:repeat(3,1fr)!important;gap:6px!important}
 }
+@media(max-width:600px){
+  .pgal.two-col{grid-template-columns:repeat(3,1fr)!important;gap:6px!important}
+}
